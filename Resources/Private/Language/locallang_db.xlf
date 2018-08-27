@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2018-08-27T17:06:30Z" product-name="speakerlist">
+		<header/>
+		<body>
+			<trans-unit id="tx_speakerlist_domain_model_speaker">
+				<source>Speaker</source>
+			</trans-unit>
+			<trans-unit id="tx_speakerlist_speakerlistfe.name">
+				<source>Speaker List</source>
+			</trans-unit>
+			<trans-unit id="tx_speakerlist_speakerlistfe.description">
+				<source>Lists all Speakers and corresponding events according to sf_event_mgt.</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

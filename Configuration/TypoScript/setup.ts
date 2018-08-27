@@ -11,7 +11,6 @@ plugin.tx_speakerlist_speakerlistfe {
     persistence {
         #storagePid = {$plugin.tx_speakerlist_speakerlistfe.persistence.storagePid}
         storagePid = 9
-        #recursive = 1
         classes {
             MfB\Speakerlist\Domain\Model\Speaker {
                 mapping {
@@ -22,6 +21,7 @@ plugin.tx_speakerlist_speakerlistfe {
                 }
             }
         }
+        #recursive = 1
     }
     features {
         #skipDefaultArguments = 1
@@ -33,6 +33,19 @@ plugin.tx_speakerlist_speakerlistfe {
     mvc {
         #callDefaultActionIfActionCantBeResolved = 1
     }
+}
+
+config.tx_extbase.persistence {
+        classes {
+            MfB\Speakerlist\Domain\Model\Speaker {
+                mapping {
+                    tableName = tx_sfeventmgt_domain_model_speaker
+                    columns {
+                        name.mapOnProperty = name
+                    }
+                }
+            }
+        }
 }
 
 # these classes are only used in auto-generated templates

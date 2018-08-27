@@ -1,0 +1,28 @@
+{
+    "name": "mfb/speakerlist",
+    "type": "typo3-cms-extension",
+    "description": "Lists all Speakers and corresponding events according to sf_event_mgt.",
+    "authors": [
+        {
+            "name": "Malte Bacher",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "typo3/cms-core": "^8.7.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Mfb\\Speakerlist\\": "Classes"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Mfb\\Speakerlist\\Tests\\": "Tests"
+        }
+    },
+    "replace": {
+        "speakerlist": "self.version",
+        "typo3-ter/speakerlist": "self.version"
+    }
+}
